@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root{
+	--color-negro: #1b1e20;
+	--color-numeros: #ecf1f3;
+	--color-general: #5f727f;
+	--color-borde-speakers: #dfe5e8;
+	--color-footer: #222528;
+	--color-letra-footer: #99a9b5;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	color: var(--color-general);
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif;
+	color: var(--color-negro);
+}
+.section{
+	padding:10% 0;
+}
+.titulo{
+	font-size: 36px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+.titulo::after{
+	content: '';
+	display: block;
+	border-bottom: 3px solid #1B79BD;
+	width: 50px;
+	margin: 20px auto;
+}
+.subtitulo{
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+header{
+    background-color: #21222B;
+	position: absolute;
+	width: 100%;
+}
+header a{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.header-area.sticky {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+	width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+	transition: 0.3s all ease;
+	border-bottom: 0 !important;
+}
+.header-area.sticky .navbar-light{
+	background-color: #fff !important;
+}
+.header-area.sticky .navbar-light .navbar-nav .nav-link{
+	color: #000;
+}
+header img:nth-child(2),
+.header-area.sticky img:nth-child(1){
+	display: none;
+}
+.header-area.sticky img:nth-child(2){
+	display: inherit;
+}
+
+#hero{
+	background-image: url("../img/bg-hero.png");
+	background-position: top center;
+	background-size: cover;
+	color: #fff;
+	padding: 240px 0px;
+}
+#hero h1{
+	font-size: 80px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	color: #fff;
+}
+#hero h6{
+	font-size: 10px;
+	margin-bottom: 30px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+#about h1{
+	color: var(--color-numeros);
+	font-size: 75px;
+	text-align: left;
+	font-weight: 700;
+}
+#about h3{
+	font-size: 30px;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+#about p{
+	text-align: left;
+	margin-bottom: 30px;
+}
+#about a{
+	font-family: 'Montserrat', sans-serif;
+	color: #1B79BD;
+	font-size: 15px;
+	font-weight: 700;
+	text-decoration: none;
+}
+#about .btn{
+	padding: 8px 15px;
+	border: 2px solid #1B79BD;
+	align-content: left;
+}
+
+#numbers{
+	background-image: url("../img/bg-counter.png");
+	background-size: cover;
+	background-position: top center;
+	text-align: center;
+}
+#numbers i{
+	color: #fff;
+	background-color: #1B79BD;
+	padding: 10px;
+	border-radius: 100%;
+	font-size: 60px;
+	margin-bottom: 30px;
+}
+#numbers h3{
+	font-family: 'Source Sans Pro', sans-serif;
+	color:#fff;
+	font-size: 24px;
+	font-weight: 200;
+}
+#numbers h4{
+	color:#fff;
+	font-size: 50px;
+	font-weight: 700;
+}
+
+.speakers-card{
+	border: 1px solid var(--color-borde-speakers);
+	text-align: left;
+	padding: 25px 30px;
+}
+.speakers-card img{
+	border-radius: 100%;
+	margin-bottom: 25px;
+	border: 10px solid #fff;
+	transition: all 0.3s ease-in-out;
+}
+.speakers-card h4{
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 20;
+	margin-bottom: 20px;
+}
+.speakers-card p{
+	color: var(--color-general);
+	font-size: 16px;
+}
+.speakers-card i{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid var(--color-naranja);
+	border-radius: 100%;
+	color: var(--color-naranja);
+}
+.speakers-card:hover img{
+	border: 10px solid var(--color-naranja);
+	transition: all 0.3s ease-in-out;
+}
+.speakers-card:hover i{
+	background-color: var(--color-naranja);
+	color: #fff;
+}
+.speakers-card:hover{
+	box-shadow: 0px 0px 30px 0px #ddd;
+}
+
+#outro{
+	background-color: #393941;
+	padding: 80px 0px;
+	text-align: center;
+}
+#outro img{
+	padding: 30px 0px;
+}
+#outro h4{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	color: var(--color-letra-footer);
+	margin-bottom: 30px;
+}
+
+footer{
+	background-color: var(--color-footer);
+	padding: 30px 0px;
+	color: var(--color-letra-footer);
+	text-align: left;
+}
